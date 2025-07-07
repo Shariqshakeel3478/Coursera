@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+.main{
+    display:flex ;
+    width: 100%;
+    justify-content: space-evenly;
+margin-top: 200px;
+}
+
+.box{
+    width: 30%;
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1{
+    background-color: #ff69b4;
+}
+#box2{
+    background-color: #3fafb1;
+}#box3{
+    background-color: #71ff69;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45%; /* Thoda chhota width taki 2 box ek line me aa sakein */
+        margin-bottom: 20px; /* Box ke beech gap ke liye */
+    }
+    #box3{
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 767px){
+.main{
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    width: 80%;
+    margin-bottom: 10px;
+
+}
+}
